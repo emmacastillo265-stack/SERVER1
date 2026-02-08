@@ -1,0 +1,8 @@
+{
+  "language": "en_us",
+  "sendMessageFormat": "§6[PM -\u003e §b{target}§6]: §f{message}",
+  "receiveMessageFormat": "§6[PM] §a{sender}§r: §f{message}",
+  "offlineMessageFormat": "§6[PM] §a{sender}§r: §f{message}",
+  "historyMessageFormat": "[{number}] §6[PM§b{target}§6] §a{sender}§r: §f{message}",
+  "notesFormat": "{index}§6[{dateTime}]: §f{content}"
+}

@@ -1,0 +1,106 @@
+features:
+  disable-spawn-chunks: true
+  prevent-moving-into-unloaded-chunks: true
+  autosave-interval: 12000
+  xp-merge-fraction: 40
+  xp-merge-radius: 1.0
+  item-merge-radius: 1.0
+  lobotomize-villagers:
+    enabled: false
+    tick-interval: 20
+
+dynamic:
+  enabled: true
+  target-mspt: 30
+  dynamic-settings:
+    - setting: 'CHUNK_TICK_DISTANCE'
+      max: 10
+      min: 2
+      increment: 1
+      interval: 15
+    - setting: 'MOBCAP_PERCENTAGE'
+      max: 100
+      min: 30
+      increment: 10
+      interval: 15
+    - setting: 'SIMULATION_DISTANCE'
+      max: 10
+      min: 2
+      increment: 1
+      interval: 15
+    - setting: 'VIEW_DISTANCE'
+      max: 10
+      min: 2
+      increment: 1
+      interval: 150
+
+breeding-cap:
+  enabled: false
+  villagers:
+    limit: 32
+    range: 64
+  animals:
+    limit: 32
+    range: 64
+
+mob-spawning:
+  zombie-reinforcements:
+    enforce-mobcap: false
+    additional-capacity: 16
+  nether-portal-randomticks:
+    enforce-mobcap: false
+    additional-capacity: 16
+  monster-spawners:
+    enforce-mobcap: false
+    additional-capacity: 16
+  categories:
+    - category: 'MONSTER'
+      mobcap: 50
+      spawn-interval: 1
+    - category: 'CREATURE'
+      mobcap: 8
+      spawn-interval: 400
+    - category: 'AMBIENT'
+      mobcap: 10
+      spawn-interval: 1
+    - category: 'AXOLOTLS'
+      mobcap: 5
+      spawn-interval: 1
+    - category: 'UNDERGROUND_WATER_CREATURE'
+      mobcap: 5
+      spawn-interval: 1
+    - category: 'WATER_CREATURE'
+      mobcap: 3
+      spawn-interval: 1
+    - category: 'WATER_AMBIENT'
+      mobcap: 10
+      spawn-interval: 1
+
+commands:
+  status-enabled: true
+  mobcaps-enabled: true
+  colors:
+    primary: 'dark_aqua'
+    secondary: 'green'
+    tertiary: 'aqua'
+
+activation-range:
+  enabled: true
+  tick-new-entities: true
+  use-vertical-range: true
+  skip-non-immune: true
+  villager-tick-panic: true
+  villager-work-immunity-after: 20
+  villager-work-immunity-for: 20
+  excluded-entity-types:
+    - 'minecraft:warden'
+    - 'minecraft:ghast'
+    - 'minecraft:hopper_minecart'
+  default-activation-type:
+    activation-range: 16
+    tick-interval: 20
+    wakeup-interval: -1
+    extra-height-up: false
+    extra-height-down: false
+  custom-activation-types:
+    # Mantener tal cual tus mobs especiales

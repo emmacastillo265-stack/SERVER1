@@ -1,0 +1,5 @@
+correctConfigValuesFromDefaultConfig = true
+defaultConfigsPath = "defaultconfigs"
+recreateConfigsWhenParsingFails = true
+forceGlobalServerConfigs = true
+
